@@ -55,6 +55,7 @@
       }
 
       #txtArea {
+        text-align: center;
         border: rgb(22, 196, 59) 3px solid;
         font-family: inherit;
         padding: 1rem;
@@ -82,6 +83,21 @@
       }
       footer h3 {
         margin-bottom: 1rem;
+      }
+
+      @media only screen and (max-width: 415px) {
+        footer {
+          margin-top: 1rem;
+          position: absolute;
+          bottom: 0;
+          padding: 1rem;
+          font-size: 0.6rem;
+          /* background-color: rgb(226, 226, 64); */
+          width: 100%;
+        }
+        footer h3 {
+          margin-bottom: 1rem;
+        }
       }
     </style>
   </head>
