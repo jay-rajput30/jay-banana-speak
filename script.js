@@ -12,7 +12,7 @@ btn.addEventListener("click", () => {
     .then((res) => res.json())
     .then((data) => {
      var translatedTxt =  data.contents.translated;
-     console.log(translatedTxt);
+     output.innerText =  translatedTxt;
     })
     .catch((e) => console.log("error: " + e));
 });
