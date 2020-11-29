@@ -1,12 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Document</title>
-</head>
-<body>
- 
-  <script src="./script.js" type="text/javascript"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banana Speak</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Open Sans", sans-serif;
+      }
+      .container {
+        width: 60%;
+        margin: 5rem auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+      }
+
+      button {
+        font-family: inherit;
+        padding: 1rem;
+        border: rgb(40, 68, 12) 4px solid;
+        background-color: rgb(248, 248, 9);
+        border-radius: 5px;
+        color: rgb(40, 68, 12);
+        margin: 1.5rem auto;
+        font-size: 1.2rem;
+        transition: all 0.3s ease-in;
+      }
+
+      button:hover {
+        transform: scale(1.1);
+      }
+
+      #txtArea {
+        border: rgb(40, 68, 12) 3px solid;
+        font-family: inherit;
+        padding: 1rem;
+        border-radius: 5px;
+        background-color: rgb(248, 248, 9);
+      }
+
+      .output {
+        background-color: rgb(248, 248, 9);
+        border-radius: 5px;
+        color: rgb(40, 68, 12);
+        font-size: 1.5rem;
+        border: 3px solid rgb(40, 68, 12);
+        padding: 1rem;
+        width: 20rem;
+        height: 7rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <textarea name="txtArea" id="txtArea" cols="30" rows="3"></textarea>
+      <button class="btn">Click Me!</button>
+      <div class="output"></div>
+    </div>
+    <script src="./script.js" type="text/javascript"></script>
+  </body>
 </html>
